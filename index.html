@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mosaic | Visual Discovery</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-icon">✳</span>
+            <span>Mosaic</span>
+        </div>
+
+        <p class="header-note">A little inspiration goes a long way.</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+
+            <h1>
+                Find inspiration.<br>
+                <span>One search at a time.</span>
+            </h1>
+
+            <p class="description">
+                Explore visual ideas, discover new perspectives
+                and collect inspiration from around the world.
+            </p>
+
+            <form id="search-form" class="search-form">
+
+                <label for="search-input">
+                    Search for anything
+                </label>
+
+                <div class="search-controls">
+
+                    <input
+                        id="search-input"
+                        type="search"
+                        placeholder="Try nature, architecture, travel..."
+                        aria-label="Enter an image search topic"
+                    >
+
+                    <button id="search-button" type="submit">
+                        Search →
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="categories">
+
+                <span class="category-label">EXPLORE BY CATEGORY</span>
+
+                <div class="category-list">
+                    <button type="button" class="chip">Nature</button>
+                    <button type="button" class="chip">Architecture</button>
+                    <button type="button" class="chip">Travel</button>
+                    <button type="button" class="chip">Art</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="collection">
+
+            <div class="collection-heading">
+                <div>
+                    <p class="eyebrow">YOUR COLLECTION</p>
+                    <h2>Discover something new</h2>
+                </div>
+
+                <p id="status">Showing 0 results</p>
+            </div>
+
+            <div class="empty-state">
+                <div class="empty-icon">✳</div>
+
+                <h3>Your canvas is waiting</h3>
+
+                <p>
+                    Search for a topic above and your
+                    visual discoveries will appear here.
+                </p>
+            </div>
+
+            <section id="results" aria-label="Image search results">
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with curiosity. Made with Mosaic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
